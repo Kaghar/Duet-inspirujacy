@@ -1,0 +1,6 @@
+@mixin underline {
+    height: 2px;
+    width: 0;
+    background-image: linear-gradient(90deg ,$color-one, $color-two, $color-three, $color-four, $color-five);
+    transition: all .2s;
+}

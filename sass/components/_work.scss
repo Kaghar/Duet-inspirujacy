@@ -1,0 +1,78 @@
+.work {
+    grid-column: full-start / full-end;
+    height: 80vh;
+    
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)) ,url('../../resource/img/3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &__container {
+        width: 80%;
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    &__box {
+        margin: 0 auto;
+        display: grid;
+        transition: all .5s;
+
+        justify-items: center;
+        
+
+        &-1{
+            transform: translateX(30rem);
+            opacity:0;
+        }
+        &-2{
+            transform: translateX(-30rem);
+            opacity:0;
+            
+        }
+        &-3{
+            transform: translateX(30rem);
+            opacity:0;
+            
+        }
+        &-4{
+            transform: translateX(-30rem);
+            opacity:0;
+           
+        }
+        &-5{
+            transform: translateX(30rem);
+            opacity:0;
+           
+        }
+        &-6{
+            transform: translateX(-30rem);
+            opacity:0;
+            
+        }
+
+
+        
+        &:hover > :last-child{
+            width: 100%;
+            transition: all .2s;
+            border-radius: 5px;
+        }
+        &-underline{
+            @include underline;
+            align-self: flex-start;
+            height: 4px;
+            
+            
+
+        }
+    }
+
+
+}

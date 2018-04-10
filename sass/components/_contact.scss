@@ -1,0 +1,44 @@
+.contact{
+    grid-column: full-start / full-end;
+    height: 50vh;
+    background-color: $color-bg-three;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        display: grid;
+        grid-gap: 1rem;
+        justify-items: center;
+
+    }
+    &__line {
+        height: 1px;
+        width: 70%;
+        
+        background-color: #fff;
+
+    }
+
+    &__copy {
+        font-size: 1.2rem;
+        text-align: center;
+
+
+        
+
+        &-link {
+            &:visited,
+            &:link {
+                text-decoration: none;
+                
+                background-image: linear-gradient(to right, $color-two, $color-four);
+        -webkit-background-clip: text;
+     color: transparent;
+            }
+        }
+    }
+}
+

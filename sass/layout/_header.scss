@@ -1,0 +1,25 @@
+.hero {
+    grid-column: full-start / full-end;
+//linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,
+    background-image: url('../../resource/img/hero4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: (100vh - 4vh);
+    //margin: 2rem;
+    
+
+    &__tittle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        transform: translate(-1%, -4%);
+        -webkit-user-select: none;  
+        -moz-user-select: none;     
+        -ms-user-select: none;      
+        user-select: none;                
+
+    }
+}
